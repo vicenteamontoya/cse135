@@ -1,0 +1,94 @@
+/* FONTS */
+
+@font-face {
+    font-family: "RobotoCondensed-BoldItalic";
+    src: url("fonts/RobotoCondensed-BoldItalic.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Bold";
+    src: url("fonts/RobotoCondensed-Bold.ttf") format("truetype");
+    font-display: swap;
+}
+  
+@font-face {
+    font-family: "RobotoCondensed-Italic";
+    src: url("/fonts/RobotoCondensed-Italic.ttf") format("truetype");
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "RobotoCondensed-Regular";
+    src: url("fonts/RobotoCondensed-Regular.ttf") format("truetype");
+    font-display: swap;
+}
+
+/* CONSTANTS */
+
+:root{
+    --primary-color: #F6AE2D;
+    --secondary-color: #A4B0F5;
+    --primary-background-color: white;
+    --primary-font-color: black;
+    --secondary-font-color: white;
+    --visited-color: #2F4858;
+}
+
+/* MAIN */
+
+h1 {
+    font-size: 4em;
+}
+
+body {
+    font-family: RobotoCondensed-Regular, sans-serif;
+    margin-left: 5vw;
+    margin-right: 5vw;
+    background: var(--primary-background-color);
+}
+
+header {
+    display: grid;
+    grid-template-columns: 75% 25%;
+    grid-template-rows: auto;
+    justify-content: stretch; 
+}
+
+header aside{
+    background: var(--primary-color);
+    color: var(--primary-font-color);
+    padding: 5%;
+    border-radius: 10px;
+}
+
+a{
+    color: var(--primary-font-color);
+    text-decoration: none;
+    text-decoration-line: underline;
+    text-decoration-thickness: 2px;
+}
+
+header a:visited {
+    color: var(--visited-color);
+}
+
+main a:visited {
+    color: var(--visited-color);
+}
+
+main {
+    font-size: large;
+}
+
+section ul {
+    background: var(--secondary-color);
+    color: var(--primary-font-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+}
