@@ -29,6 +29,7 @@
 :root{
     --primary-color: #F6AE2D;
     --secondary-color: #A4B0F5;
+    --tertiary-color: #a4c0f5;
     --primary-background-color: white;
     --primary-font-color: black;
     --secondary-font-color: white;
@@ -81,11 +82,48 @@ main {
     font-size: large;
 }
 
-section ul {
+section.common > ul{
     background: var(--secondary-color);
     color: var(--primary-font-color);
     padding: 2rem;
     border-radius: 10px;
+}
+
+section.common > p{
+    background: var(--secondary-color);
+    color: var(--primary-font-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#main-description{
+    background: var(--primary-color);
+    color: var(--primary-font-color);
+    padding: 2rem;
+    border-radius: 10px;
+}
+
+#hw2-contents-grid{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    background: var(--secondary-color);
+    color: var(--primary-font-color);
+    padding: 2rem;
+    border-radius: 10px;
+    justify-content: space-around;
+}
+
+.hw2-language-cgi{
+    background: var(--tertiary-color);
+    color: var(--primary-font-color);
+    border-radius: 10px;
+    place-self: center;
+    display: grid;
+    padding-right: 1vw;
+}
+
+.hw2-language-cgi > * {
+    place-self: center;
 }
 
 footer {
